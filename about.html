@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-[#f7f7f7] overflow-x-hidden">
+  <div class="main-container w-[95%] m-auto h-screen ">
+
+    <div class="notification bg-black fixed top-10 transition-all duration-500 capitalize -right-full rounded-lg py-1 px-2 z-50 text-white ring-slate-950 shadow-lg ring-1 backdrop-blur-xl">
+      Product added to cart
+    </div>
+    <header class="bg-white">
+
+      <nav class="relative">
+        <div class="login-options-section bg-[#2a2c30] p-3 flex  gap-4 md:gap-0 flex-col md:flex-row justify-between">
+          <p class="text-white md:text-start text-center">Free shipping, 30-day return or refund guarantee.</p>
+          <div class="navBtns text-blue-500 flex justify-center md:justify-normal gap-5">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+        <div class="mobile-nav justify-center text-center hidden  absolute w-full h-screen z-50 bg-black">
+          <ul class="gap-10 cursor-pointer text-white  font-semibold flex flex-col mx-3 py-14 text-xl">
+            <span class="closeBtn absolute right-6 top-4 text-3xl material-symbols-outlined">
+              close
+              </span>
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="/">HOME</a></li>
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./about.html">ABOUT</a></li>
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./products.html">PRODUCTS</a></li>
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./contact.html">CONTACT</a></li>
+            <li class="bg-[#2a2c30] px-3 rounded-lg text-white  ">
+              <a href="./checkout.html" class="flex items-center text-3xl justify-center">
+                <span
+                class="text-3xl material-symbols-outlined">
+                shopping_cart
+              </span>
+              <span class="cartValue">0</span>
+            </a>
+              </li>
+              
+          </ul>
+        </div>
+        <div class="main-navbar flex md:flex-row flex-col  gap-4 md:gap-0  justify-between py-3 px-2 items-center">
+          <div class="w-full flex items-center sm:justify-center justify-between md:justify-normal">
+            <img class="w-36 h-12" src="./src/images/mynewlogo (1).png" alt="">
+            <span  class="menu material-symbols-outlined sm:hidden block">
+              menu
+              </span>
+          </div>
+          <ul class="gap-4 cursor-pointer font-semibold hidden sm:flex">
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="/">HOME</a></li>
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./about.html">ABOUT</a></li>
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./products.html">PRODUCTS</a></li>
+            <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./contact.html">CONTACT</a></li>
+            <li class="bg-[#2a2c30] px-3 rounded-lg text-white ">
+              <a href="./checkout.html" class="flex items-center">
+                <span
+                class="material-symbols-outlined text-lg">
+                shopping_cart
+              </span>
+              <span class="cartValue">0</span>
+            </a>
+              </li>
+              
+          </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <main>
+    
+      <div class="why-us-section my-5 py-10">
+        <div>
+          <h3 class="text-2xl font-bold">Why Choose Rishabh Store</h3>
+          <p>
+            Choose Rishabh EduHub for a holistic, enriching learning experience that
+            empowers you to achieve your goals.</p>
+        </div>
+        <div class="why-us-three-container my-20 w-full flex md:flex-row flex-col items-center justify-between">
+          <div class="first w-full md:w-[30%]">
+            <div class="card mt-5">
+              <div class="text-start md:text-end">
+                <p class="text-[#535bf2] mb-2"> <span class="px-3 py-2 bg-[#ebf3fe] rounded-full">1</span></p>
+                <h3 class="font-semibold">Wide Selection</h3>
+              </div>
+              <p class="text-sm">
+                Rishabh Store offers a diverse range of gadgets, from smartphones to
+                smart home devices, ensuring you find what you need to elevate
+                your lifestyle and meet your tech requirements.
+              </p>
+            </div>
+            <div class="card mt-5">
+              <div class="text-start md:text-end">
+                <p class="text-[#535bf2] mb-2"> <span class="px-3 py-2 bg-[#ebf3fe] rounded-full">2</span></p>
+                <h3 class="font-semibold">Quality Assurance</h3>
+              </div>
+              <p class="text-sm">
+
+                Every gadget at Rishabh Store undergoes rigorous quality checks,
+                guaranteeing reliability and performance, so you can shop with
+                confidence knowing you're getting the best.
+
+              </p>
+            </div>
+            <div class="card mt-5">
+              <div class="text-start md:text-end">
+                <p class="text-[#535bf2] mb-2"> <span class="px-3 py-2 bg-[#ebf3fe] rounded-full">3</span></p>
+                <h3 class="font-semibold">Competitive Prices</h3>
+              </div>
+              <p class="text-sm">
+                Enjoy great value with Rishabh Store's competitive prices on
+                high-quality gadgets, making top-of-the-line technology accessible
+                to all without compromising on quality or performance.
+              </p>
+            </div>
+          </div>
+          <div class="second relative flex items-center my-10 md:my-0">
+            <div
+              class="before:border-4 before:border-[#ebf3fe] before:w-[160%] before:h-[120%] before:top-0 before:left-1/2 before:-translate-x-1/2  before:translate-y-[-8%]  before:absolute before:rounded-full  after:absolute after:top-0 after:rounded-full after:left-1/2 after:translate-x-[-50%] after:w-64 after:h-64 after:bg-[#535bf2]">
+              <img class="w-48 z-10 relative" src="https://ecommerce-tp-two.vercel.app/images/ecompost.png" alt="">
+            </div>
+          </div>
+          <div class="third w-full md:w-[30%]">
+            <div class="card mt-5">
+              <div class="text-start">
+                <p class="text-[#535bf2] mb-2"> <span class="px-3 py-2 bg-[#ebf3fe] rounded-full">4</span></p>
+                <h3 class="font-semibold">Expert Guidance</h3>
+              </div>
+              <p class="text-sm">
+
+                Our knowledgeable staff provides expert guidance, helping you
+                choose the right gadget to meet your needs and preferences,
+                ensuring you make informed decisions every step of the way.
+
+              </p>
+            </div>
+            <div class="card mt-5">
+              <div class="text-start">
+                <p class="text-[#535bf2] mb-2"> <span class="px-3 py-2 bg-[#ebf3fe] rounded-full">5</span></p>
+                <h3 class="font-semibold">Convenient Shopping</h3>
+              </div>
+              <p class="text-sm">
+              
+                With Rishabh Store, shopping for gadgets is easy and convenient. Our
+                user-friendly website and secure payment options ensure a seamless
+                experience from browsing to checkout, all from the comfort of your
+                home.
+              
+              </p>
+            </div>
+            <div class="card mt-5">
+              <div class="text-start">
+                <p class="text-[#535bf2] mb-2"> <span class="px-3 py-2 bg-[#ebf3fe] rounded-full">6</span></p>
+                <h3 class="font-semibold">Excellent Service</h3>
+              </div>
+              <p class="text-sm">
+          
+                Rishabh Store is committed to providing excellent service to our
+                customers. From prompt assistance with inquiries to efficient
+                handling of orders and deliveries, we prioritize your satisfaction
+                every step of the way.
+              
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class=" bg-[#2a2c30] rounded-lg">
+        <div class="store-details py-10 px-3 gap-10 text-white w-full flex lg:flex-row flex-col justify-between">
+          <div class="container1">
+            <img class="w-24" src="./src/images/secondLogo.png" alt="">
+            <p class="my-4 text-white text-sm">
+              Welcome to Rishabh EcomStore, your ultimate destination for
+              cutting-edge gadgets!
+            </p>
+            <img class="cursor-pointer" src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="">
+          </div>
+          <div class="flex lg:gap-0 gap-20">
+          <div class="container2 mr-4  lg:mr-32">
+            <h4>SHOPPING</h4>
+            <ul class="text-sm text-[#cccccc] flex flex-col gap-2 mt-3">
+              <li>Computer Store</li>
+              <li>Laptop Store</li>
+              <li>Accessories</li>
+              <li>Sales & Discount</li>
+            </ul>
+          </div>
+          <div class="container3 pr-6">
+            <h4 class="uppercase">Experience</h4>
+            <ul class="text-sm text-[#cccccc] flex flex-col gap-2 mt-3">
+              <li>Contact Us</li>
+              <li>Payment Method</li>
+              <li>Delivery</li>
+              <li>Return and Exchange</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="newsLetter flex flex-col gap-3 w-full md:w-1/2 lg:w-1/3 pb-5 px-3 text-white">
+          <h4>NEWSLETTER</h4>
+          <p class="text-sm">Be the first to know about new arrivals, sales & promos!</p>
+          <div class="flex gap-2">
+            <input class="bg-[#2a2c30] border-2 border-white w-[70%] py-1 px-3 rounded-xl outline-none" type="email" placeholder="Email">
+            <button class="bg-blue-400 text-white py-1 px-3 border-2 border-white rounded-xl">Subscribe</button>
+          </div>
+
+        </div>
+        <div class="border-t-2 border-white text-center py-3">
+          <a href="#" class="text-[#4b4f56]  cursor-pointer">Made By Rishabh</p>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@media (max-width: 410px){
+    .product-img-name{
+      flex-direction: column;
+  
+    }
+    .product-img-name h2{
+      margin: 0;
+    }
+    .quantity-section{
+        flex-direction: column;
+        gap: 0;
+    }
+    .total{
+        width: 100%;
+    }
+}

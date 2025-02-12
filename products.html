@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-[#f7f7f7]">
+    <div class="main-container w-[95%] m-auto h-screen">
+      <div class="notification bg-black fixed top-10 transition-all duration-500 capitalize -right-full rounded-lg py-1 px-2 z-50 text-white ring-slate-950 shadow-lg ring-1 backdrop-blur-xl">
+        Product added to cart
+      </div>
+      <header>
+        <nav class="relative">
+          <div class="login-options-section bg-[#2a2c30] p-3 flex  gap-4 md:gap-0 flex-col md:flex-row justify-between">
+            <p class="text-white md:text-start text-center">Free shipping, 30-day return or refund guarantee.</p>
+            <div class="navBtns text-blue-500 flex justify-center md:justify-normal gap-5">
+              <a href="#">SIGN IN</a>
+              <a href="#">SIGN UP</a>
+            </div>
+          </div>
+          <div class="mobile-nav justify-center text-center hidden  absolute w-full h-screen z-50 bg-black">
+            <ul class="gap-10 cursor-pointer text-white  font-semibold flex flex-col mx-3 py-14 text-xl">
+              <span class="closeBtn absolute right-6 top-4 text-3xl material-symbols-outlined">
+                close
+                </span>
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="/">HOME</a></li>
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./about.html">ABOUT</a></li>
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./products.html">PRODUCTS</a></li>
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./contact.html">CONTACT</a></li>
+              <li class="bg-[#2a2c30] px-3 rounded-lg text-white  ">
+                <a href="./checkout.html" class="flex items-center text-3xl justify-center">
+                  <span
+                  class="text-3xl material-symbols-outlined">
+                  shopping_cart
+                </span>
+                <span class="cartValue">0</span>
+              </a>
+                </li>
+                
+            </ul>
+          </div>
+          <div class="main-navbar flex md:flex-row flex-col  gap-4 md:gap-0  justify-between py-3 px-2 items-center">
+            <div class="w-full flex items-center sm:justify-center justify-between md:justify-normal">
+              <img class="w-36 h-12" src="./src/images/mynewlogo (1).png" alt="">
+              <span  class="menu material-symbols-outlined sm:hidden block">
+                menu
+                </span>
+            </div>
+            <ul class="gap-4 cursor-pointer font-semibold hidden sm:flex">
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="/">HOME</a></li>
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./about.html">ABOUT</a></li>
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./products.html">PRODUCTS</a></li>
+              <li class="hover:text-[#646cff] transition-all duration-300 relative"><a class="hover:after:w-[100%] after:transition-all after:duration-300 after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-[#646cff]" href="./contact.html">CONTACT</a></li>
+              <li class="bg-[#2a2c30] px-3 rounded-lg text-white ">
+                <a href="./checkout.html" class="flex items-center">
+                  <span
+                  class="material-symbols-outlined text-lg">
+                  shopping_cart
+                </span>
+                <span class="cartValue">0</span>
+              </a>
+                </li>
+                
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="sale-section w-full flex flex-col  bg-white mt-10 md:flex-row justify-between">
+          <div class="card flex md:flex-row flex-col p-5 bg-white relative overflow-hidden items-center">
+            <div class="md:w-auto w-full">
+              <p class="text-[#1f36b9] text-sm">NEW YEAR SALE</p>
+              <h3 class="font-bold text-lg">Get And Extra <br class="md:block hidden"> 50% Off</h3>
+              <a href="#" class="underline text-[#2a2c30] text-sm">SHOW NOW</a>
+            </div>
+            <div class="mt-5 flex md:justify-normal justify-center">
+              <img class="md:w-32 w-1/2 relative z-10" src="http://ecommerce-tp-two.vercel.app/images/laptop.png" alt="">
+            </div>
+            <div class="cornor w-32 bg-[#d7e0e9] h-32 rounded-full absolute -right-12 -bottom-12 z-0"></div>
+          </div>
+          <div class="card flex md:flex-row flex-col p-5 pb-9 bg-white gap-4 relative overflow-hidden items-center">
+            <div class="md:w-auto w-full">
+              <p class="text-[#1f36b9] text-sm">NEW YEAR SALE</p>
+              <h3 class="font-bold text-lg">40% discount on <br class="md:block hidden"> speakers</h3>
+              <a href="#" class="underline text-[#2a2c30] text-sm">SHOW NOW</a>
+            </div>
+            <div class="mt-5 w-28 md:justify-normal justify-center">
+              <img class="w-full relative z-10" src="https://ecommerce-tp-two.vercel.app/images/headphoneEcom.png"
+                alt="">
+            </div>
+            <div class="cornor w-32 bg-[#d7e0e9] h-32 rounded-full absolute -right-12 -bottom-12"></div>
+          </div>
+          <div class="card flex md:flex-row flex-col p-5 bg-white gap-4 relative overflow-hidden items-center">
+            <div class="md:w-auto w-full">
+              <p class="text-[#1f36b9] text-sm">NEW YEAR SALE</p>
+              <h3 class="font-bold text-lg">Get And Extra <br class="md:block hidden"> 50% Off</h3>
+              <a href="#" class="underline text-[#2a2c30] text-sm">SHOW NOW</a>
+            </div>
+            <div class="mt-5 w-28">
+              <img class="relative w-full rotate-6 z-10" src="https://ecommerce-tp-two.vercel.app/images/mobiles.png"
+                alt="">
+            </div>
+            <div class="cornor w-32 bg-[#d7e0e9] h-32 rounded-full absolute -right-12 -bottom-12"></div>
+          </div>
+        </div>
+        <div class="info-section bg-white mt-5 p-6 pt-9 flex flex-wrap gap-6 justify-between">
+          <div class="card flex items-center gap-6">
+            <span class="material-symbols-outlined text-[#576ef0] text-4xl">
+              delivery_truck_speed
+            </span>
+            <div class="text-[#1E1F23] capitalize">
+              <p class="text-base">worldwide shipping</p>
+              <p class="text-sm">order above $100</p>
+            </div>
+          </div>
+          <div class="card flex items-center  gap-6">
+            <span class="material-symbols-outlined text-[#576ef0] text-4xl">
+              autorenew
+            </span>
+            <div class="text-[#1E1F23] capitalize">
+              <p class="text-base">worldwide shipping</p>
+              <p class="text-sm">order above $100</p>
+            </div>
+          </div>
+          <div class="card flex items-center  gap-6">
+            <span class="material-symbols-outlined text-[#576ef0] text-3xl">
+              currency_exchange
+            </span>
+            <div class="text-[#1E1F23] capitalize">
+              <p class="text-base">worldwide shipping</p>
+              <p class="text-sm">order above $100</p>
+            </div>
+          </div>
+          <div class="card flex items-center  gap-6">
+            <span class="material-symbols-outlined text-[#576ef0] text-4xl">
+              support_agent
+            </span>
+            <div class="text-[#1E1F23] capitalize">
+              <p class="text-base">worldwide shipping</p>
+              <p class="text-sm">order above $100</p>
+            </div>
+          </div>
+        </div>
+        <div class="store-name px-1 py-12">
+          <h3 class="font-bold text-xl">Checkout Rishabh Store</h3>
+        </div>
+        <div class="products-section flex gap-10 pb-20 flex-wrap justify-center">
+        
+        </div>
+        
+      </div>
+      
+      <script src="./main.js"></script>
+  </body>
+</html>
